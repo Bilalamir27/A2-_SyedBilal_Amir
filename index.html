@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--
+      Syed Bilal Amir
+      991582048
+     -->
     <meta charset="utf-8">
     <title>Catch the alien</title>
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +19,22 @@
       //Solution is 15 lines of code.  The instructions make it look like a longer assingment than it really it is.
       
       //Event handler setup
+       //1. Create an event handler on the window object for the load event 
 
-        //1. Create an event handler on the window object for the load event 
-        
+      window.addEventListener ('DOMContentLoaded', (event)) => {
+        console.log("Load event test")
+        window.addEventListener('mousemove',function(e){
+          mouseEvent(e);
+        })
+
+        function mouseEvent(event){
+          var x = event.offsetX;
+          var y = event.offsetY;
+
+          var spaceship = document.getElementById('spaceship1');
+          
+        }
+      }
         
         //2. Create an event handler on the window object for the mousemove event
         
